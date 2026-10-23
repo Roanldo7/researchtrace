@@ -8,7 +8,7 @@
 
 **第一次使用：[下载运行包](https://github.com/Roanldo7/researchtrace/releases/download/v1.0.0/ResearchTrace-1.0.0.zip) → 解压 → 准备 Python → 双击 run_demo.bat → 新建离线研究。**
 
-[详细操作与模型配置](docs/USAGE.md) · [本地资料格式](docs/DATA_FORMAT.md) · [产品作品说明 PDF](https://github.com/Roanldo7/researchtrace/releases/download/v1.0.0/ResearchTrace-Portfolio-HuangYang.pdf)
+[详细操作与模型配置](docs/USAGE.md) · [本地资料格式](docs/DATA_FORMAT.md) 
 
 ![当前研究工作台：三种运行方式、七步进度和已确认的联网报告](docs/images/overview.png)
 
@@ -151,7 +151,7 @@ python -B test_live.py
 
 ## 个人工作与 AI 协作
 
-作者黄洋负责研究场景与需求组织、产品结构和功能取舍、试用反馈及验收；Codex 协助代码实现、调试与测试。项目展示把研究业务问题拆成可执行流程、设置人在回路的决策点，并通过实际反馈持续迭代的实践。
+作者负责研究场景与需求组织、产品结构和功能取舍、试用反馈及验收；Codex 协助代码实现、调试与测试。项目展示把研究业务问题拆成可执行流程、设置人在回路的决策点，并通过实际反馈持续迭代的实践。
 
 ## 数据与资料范围
 
