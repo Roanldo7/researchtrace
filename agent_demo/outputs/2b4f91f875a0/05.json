@@ -1,0 +1,565 @@
+{
+  "number": 5,
+  "name": "人工审核",
+  "status": "completed",
+  "input": {
+    "review_items": [
+      {
+        "item_id": "R01",
+        "entity": "比亚迪",
+        "metric": "营业收入",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F01"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R02",
+        "entity": "比亚迪",
+        "metric": "归母净利润",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F02"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R03",
+        "entity": "蔚来",
+        "metric": "企业交付量",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F03"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R04",
+        "entity": "蔚来",
+        "metric": "营业收入",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F04"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R05",
+        "entity": "蔚来",
+        "metric": "净亏损",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F05"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R06",
+        "entity": "蔚来",
+        "metric": "净亏损同比",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F06"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R07",
+        "entity": "理想汽车",
+        "metric": "企业交付量",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F07"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R08",
+        "entity": "理想汽车",
+        "metric": "营业收入",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F08"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R09",
+        "entity": "理想汽车",
+        "metric": "净利润",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F09"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R10",
+        "entity": "理想汽车",
+        "metric": "净利润同比",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F10"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R11",
+        "entity": "理想汽车",
+        "metric": "营业收入同比",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F11"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R12",
+        "entity": "比亚迪",
+        "metric": "企业销量",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F12"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R13",
+        "entity": "中国汽车行业",
+        "metric": "新能源汽车销量",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F13"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R14",
+        "entity": "中国汽车行业",
+        "metric": "销量同比",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F14"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R15",
+        "entity": "中国汽车行业",
+        "metric": "新车销量占比",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F15"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R16",
+        "entity": "比亚迪",
+        "metric": "国内零售份额",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F16"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R17",
+        "entity": "特斯拉中国",
+        "metric": "国内零售份额",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F17"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R18",
+        "entity": "广汽埃安",
+        "metric": "国内零售份额",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F18"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R19",
+        "entity": "中国乘用车行业",
+        "metric": "新能源汽车销量",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F19"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R20",
+        "entity": "蔚来",
+        "metric": "智能化发布",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F20"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R21",
+        "entity": "蔚来",
+        "metric": "交付计划",
+        "period": "2025-03",
+        "value_type": "announced_plan",
+        "candidate_ids": [
+          "F21"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R22",
+        "entity": "宁德时代",
+        "metric": "电池技术",
+        "period": "2024",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F22"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R23",
+        "entity": "比亚迪",
+        "metric": "国内零售份额",
+        "period": "2023",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F23"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R24",
+        "entity": "特斯拉中国",
+        "metric": "国内零售份额",
+        "period": "2023",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F24"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      },
+      {
+        "item_id": "R25",
+        "entity": "广汽埃安",
+        "metric": "国内零售份额",
+        "period": "2023",
+        "value_type": "actual",
+        "candidate_ids": [
+          "F25"
+        ],
+        "conflict": false,
+        "status": "unresolved",
+        "evidence_note": "单一原始来源，需人工确认"
+      }
+    ]
+  },
+  "tool": "本地操作者",
+  "output": {
+    "review_decisions": [
+      {
+        "item_id": "R01",
+        "selected_fact_id": "F01",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S10",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R02",
+        "selected_fact_id": "F02",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S10",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R03",
+        "selected_fact_id": "F03",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S04",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R04",
+        "selected_fact_id": "F04",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S04",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R05",
+        "selected_fact_id": "F05",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S04",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R06",
+        "selected_fact_id": "F06",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S04",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R07",
+        "selected_fact_id": "F07",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S03",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R08",
+        "selected_fact_id": "F08",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S03",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R09",
+        "selected_fact_id": "F09",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S03",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R10",
+        "selected_fact_id": "F10",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S03",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R11",
+        "selected_fact_id": "F11",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S03",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R12",
+        "selected_fact_id": "F12",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S02",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R13",
+        "selected_fact_id": "F13",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S01",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R14",
+        "selected_fact_id": "F14",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S01",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R15",
+        "selected_fact_id": "F15",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S01",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R16",
+        "selected_fact_id": "F16",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S09",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R17",
+        "selected_fact_id": "F17",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S09",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R18",
+        "selected_fact_id": "F18",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S09",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R19",
+        "selected_fact_id": "F19",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S07",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R20",
+        "selected_fact_id": "F20",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S06",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R21",
+        "selected_fact_id": "F21",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S06",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R22",
+        "selected_fact_id": "F22",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S05",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R23",
+        "selected_fact_id": "F23",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S08",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R24",
+        "selected_fact_id": "F24",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S08",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      },
+      {
+        "item_id": "R25",
+        "selected_fact_id": "F25",
+        "reason": "预置示例决定：按内置公开摘录采用，未进行用户人工审核。",
+        "selected_source_id": "S08",
+        "decision": "adopt",
+        "actor": "bundled_example_rules",
+        "recorded_at": "2026-10-23T11:18:38.759+00:00"
+      }
+    ]
+  },
+  "finished_at": "2026-10-23T11:18:38.759+00:00"
+}

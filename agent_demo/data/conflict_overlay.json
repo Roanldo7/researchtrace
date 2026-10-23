@@ -1,0 +1,33 @@
+{
+  "source_id": "T01",
+  "title": "合成冲突候选（仅测试）",
+  "publisher": "本地测试夹具",
+  "published_at": "2025-01-13",
+  "source_url": null,
+  "source_kind": "web",
+  "entity": "中国汽车行业",
+  "scope": "中汽协汽车行业销量口径，含出口、乘用车及商用车；非国内零售",
+  "period": "2024",
+  "origin": "synthetic_test",
+  "synthetic_test": true,
+  "retrieved_at": "2026-09-25",
+  "verification_status": "虚构测试值，禁止作为真实研究事实",
+  "local_file": "data/conflict_overlay.json",
+  "locator": "T01",
+  "tags": [
+    "新能源汽车",
+    "2024"
+  ],
+  "excerpts": {
+    "年度新能源": "合成测试：新能源汽车销量1386.6万辆。"
+  },
+  "fields": [
+    {
+      "metric": "新能源汽车销量",
+      "locator": "年度新能源",
+      "pattern": "销量([\\d.]+)万辆",
+      "unit": "万辆",
+      "category": "number"
+    }
+  ]
+}

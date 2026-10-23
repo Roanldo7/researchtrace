@@ -1,0 +1,3 @@
+# Only required for PDF export. Core / Mock / Markdown use the Python standard library.
+# Tested release dependency; installed separately, no third-party binary is bundled.
+PyMuPDF==1.28.2

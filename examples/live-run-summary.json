@@ -1,0 +1,20 @@
+{
+  "description": "公开网页研究的既有真实运行摘要；本次发布未重新付费调用。",
+  "run_id": "037aa750faf0",
+  "created_at": "2026-10-22T17:51:59.923+00:00",
+  "topic": "分析2024年新能源汽车行业竞争格局及投资机会",
+  "mode": "live",
+  "provider": "deepseek",
+  "model_name": "deepseek-flash",
+  "status": "COMPLETED",
+  "analysis_status": "approved",
+  "search_actions": 1,
+  "real_model_calls": 3,
+  "accepted_claims": 7,
+  "returned_url_count": 6,
+  "duplicate_document_links": [
+    "W01 / W02"
+  ],
+  "scope": "仅证明真实调用路径及保存的产物。网页陈述与网页日期须回原文核对；6条链接不是6个独立来源。",
+  "excluded": "未公开原始搜索全文、完整state、请求头、密钥、浏览器数据或私人配置。"
+}

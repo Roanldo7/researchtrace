@@ -1,0 +1,161 @@
+{
+  "number": 2,
+  "name": "资料检索",
+  "status": "completed",
+  "started_at": "2026-10-23T11:18:38.823+00:00",
+  "input": {
+    "topic": "分析2024年新能源汽车行业竞争格局及投资机会",
+    "period": "2024",
+    "observation_date": "2025-03-31",
+    "focus": "industry",
+    "sections": [
+      "市场概况",
+      "竞争格局",
+      "技术趋势",
+      "重点公司分析",
+      "投资机会",
+      "风险提示"
+    ],
+    "companies": [
+      "比亚迪",
+      "理想汽车",
+      "蔚来"
+    ],
+    "query": "2024 新能源汽车",
+    "start_date": "2024-01-01",
+    "end_date": "2025-03-31",
+    "scope": "2024全年事后研究；企业与行业口径分别展示",
+    "model": "MockLLM / 规则契约"
+  },
+  "tool": "四类本地Mock工具",
+  "output": {
+    "document_ids": [
+      "S10",
+      "S04",
+      "S03",
+      "S02",
+      "T01",
+      "S01",
+      "S09",
+      "S07",
+      "S06",
+      "S05",
+      "S08"
+    ],
+    "tool_calls": [
+      {
+        "step": 2,
+        "tool": "search_research",
+        "request_summary": {
+          "query": "2024 新能源汽车",
+          "start_date": "2024-01-01",
+          "end_date": "2025-03-31",
+          "top_k": 12
+        },
+        "attempt": 1,
+        "cache_hit": false,
+        "returned_document_ids": [],
+        "error": null,
+        "outcome": "success",
+        "elapsed_ms": 0.937
+      },
+      {
+        "step": 2,
+        "tool": "search_announcements",
+        "request_summary": {
+          "query": "2024 新能源汽车",
+          "start_date": "2024-01-01",
+          "end_date": "2025-03-31",
+          "top_k": 12,
+          "companies": [
+            "比亚迪",
+            "理想汽车",
+            "蔚来"
+          ]
+        },
+        "attempt": 1,
+        "cache_hit": false,
+        "returned_document_ids": [
+          "S10",
+          "S04",
+          "S03",
+          "S02"
+        ],
+        "error": null,
+        "outcome": "success",
+        "elapsed_ms": 0.466
+      },
+      {
+        "step": 2,
+        "tool": "get_finance_indicators",
+        "request_summary": {
+          "query": "2024 新能源汽车",
+          "start_date": "2024-01-01",
+          "end_date": "2025-03-31",
+          "top_k": 12,
+          "companies": [
+            "比亚迪",
+            "理想汽车",
+            "蔚来"
+          ],
+          "indicators": [
+            "营业收入"
+          ]
+        },
+        "attempt": 1,
+        "cache_hit": false,
+        "returned_document_ids": [
+          "S10",
+          "S04",
+          "S03"
+        ],
+        "error": null,
+        "outcome": "success",
+        "elapsed_ms": 0.452
+      },
+      {
+        "step": 2,
+        "tool": "search_web",
+        "request_summary": {
+          "query": "2024 新能源汽车",
+          "start_date": "2024-01-01",
+          "end_date": "2025-03-31",
+          "top_k": 12
+        },
+        "attempt": 1,
+        "cache_hit": false,
+        "returned_document_ids": [],
+        "error": "受控测试超时：首次网页快照检索失败",
+        "outcome": "retry",
+        "elapsed_ms": 0.005
+      },
+      {
+        "step": 2,
+        "tool": "search_web",
+        "request_summary": {
+          "query": "2024 新能源汽车",
+          "start_date": "2024-01-01",
+          "end_date": "2025-03-31",
+          "top_k": 12
+        },
+        "attempt": 2,
+        "cache_hit": false,
+        "returned_document_ids": [
+          "T01",
+          "S01",
+          "S09",
+          "S07",
+          "S06",
+          "S05",
+          "S08"
+        ],
+        "error": null,
+        "outcome": "success",
+        "elapsed_ms": 0.497
+      }
+    ],
+    "agent_decisions": []
+  },
+  "finished_at": "2026-10-23T11:18:38.826+00:00",
+  "elapsed_ms": 2.445
+}

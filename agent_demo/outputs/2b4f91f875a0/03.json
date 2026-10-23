@@ -1,0 +1,654 @@
+{
+  "number": 3,
+  "name": "数据提取",
+  "status": "completed",
+  "started_at": "2026-10-23T11:18:38.736+00:00",
+  "input": {
+    "document_ids": [
+      "S10",
+      "S04",
+      "S03",
+      "S02",
+      "S01",
+      "S09",
+      "S07",
+      "S06",
+      "S05",
+      "S08"
+    ],
+    "char_budget": 2000
+  },
+  "tool": "规则抽取与可选模型证据建议",
+  "output": {
+    "facts": [
+      {
+        "entity": "比亚迪",
+        "metric": "营业收入",
+        "value": 7771.0,
+        "unit": "亿元",
+        "raw_value": "777.1",
+        "raw_unit": "十亿元",
+        "conversion_factor": 10,
+        "period": "2024",
+        "scope": "合并报表人民币；含汽车及手机部件组装等业务；净利润为归属于股东",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S10"
+        ],
+        "excerpt_locator": "年度财务",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F01"
+      },
+      {
+        "entity": "比亚迪",
+        "metric": "归母净利润",
+        "value": 402.5,
+        "unit": "亿元",
+        "raw_value": "40.25",
+        "raw_unit": "十亿元",
+        "conversion_factor": 10,
+        "period": "2024",
+        "scope": "合并报表人民币；含汽车及手机部件组装等业务；净利润为归属于股东",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S10"
+        ],
+        "excerpt_locator": "年度财务",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F02"
+      },
+      {
+        "entity": "蔚来",
+        "metric": "企业交付量",
+        "value": 22.197,
+        "unit": "万辆",
+        "raw_value": "221,970",
+        "raw_unit": "辆",
+        "conversion_factor": 0.0001,
+        "period": "2024",
+        "scope": "企业全年交付，含蔚来及乐道；财务为合并报表人民币、未经审计",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S04"
+        ],
+        "excerpt_locator": "交付",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F03"
+      },
+      {
+        "entity": "蔚来",
+        "metric": "营业收入",
+        "value": 657.316,
+        "unit": "亿元",
+        "raw_value": "65,731.6",
+        "raw_unit": "百万元",
+        "conversion_factor": 0.01,
+        "period": "2024",
+        "scope": "企业全年交付，含蔚来及乐道；财务为合并报表人民币、未经审计",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S04"
+        ],
+        "excerpt_locator": "营收",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F04"
+      },
+      {
+        "entity": "蔚来",
+        "metric": "净亏损",
+        "value": 224.017,
+        "unit": "亿元",
+        "raw_value": "22,401.7",
+        "raw_unit": "百万元",
+        "conversion_factor": 0.01,
+        "period": "2024",
+        "scope": "企业全年交付，含蔚来及乐道；财务为合并报表人民币、未经审计",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S04"
+        ],
+        "excerpt_locator": "亏损",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F05"
+      },
+      {
+        "entity": "蔚来",
+        "metric": "净亏损同比",
+        "value": 8.1,
+        "unit": "%",
+        "raw_value": "8.1",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "企业全年交付，含蔚来及乐道；财务为合并报表人民币、未经审计",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S04"
+        ],
+        "excerpt_locator": "亏损",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F06"
+      },
+      {
+        "entity": "理想汽车",
+        "metric": "企业交付量",
+        "value": 50.0508,
+        "unit": "万辆",
+        "raw_value": "500,508",
+        "raw_unit": "辆",
+        "conversion_factor": 0.0001,
+        "period": "2024",
+        "scope": "企业全年交付；财务为合并报表人民币、未经审计",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S03"
+        ],
+        "excerpt_locator": "交付",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F07"
+      },
+      {
+        "entity": "理想汽车",
+        "metric": "营业收入",
+        "value": 1445.0,
+        "unit": "亿元",
+        "raw_value": "144.5",
+        "raw_unit": "十亿元",
+        "conversion_factor": 10,
+        "period": "2024",
+        "scope": "企业全年交付；财务为合并报表人民币、未经审计",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S03"
+        ],
+        "excerpt_locator": "营收",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F08"
+      },
+      {
+        "entity": "理想汽车",
+        "metric": "净利润",
+        "value": 80.0,
+        "unit": "亿元",
+        "raw_value": "8.0",
+        "raw_unit": "十亿元",
+        "conversion_factor": 10,
+        "period": "2024",
+        "scope": "企业全年交付；财务为合并报表人民币、未经审计",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S03"
+        ],
+        "excerpt_locator": "利润",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F09"
+      },
+      {
+        "entity": "理想汽车",
+        "metric": "净利润同比",
+        "value": -31.9,
+        "unit": "%",
+        "raw_value": "-31.9",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "企业全年交付；财务为合并报表人民币、未经审计",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S03"
+        ],
+        "excerpt_locator": "利润",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F10"
+      },
+      {
+        "entity": "理想汽车",
+        "metric": "营业收入同比",
+        "value": 16.6,
+        "unit": "%",
+        "raw_value": "16.6",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "企业全年交付；财务为合并报表人民币、未经审计",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S03"
+        ],
+        "excerpt_locator": "利润",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F11"
+      },
+      {
+        "entity": "比亚迪",
+        "metric": "企业销量",
+        "value": 427.2145,
+        "unit": "万辆",
+        "raw_value": "4272145",
+        "raw_unit": "辆",
+        "conversion_factor": 0.0001,
+        "period": "2024",
+        "scope": "企业全球新能源汽车销量；含商用车，不等于国内零售",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S02"
+        ],
+        "excerpt_locator": "年度销量",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F12"
+      },
+      {
+        "entity": "中国汽车行业",
+        "metric": "新能源汽车销量",
+        "value": 1286.6,
+        "unit": "万辆",
+        "raw_value": "1286.6",
+        "raw_unit": "万辆",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "中汽协汽车行业销量口径，含出口、乘用车及商用车；非国内零售",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S01"
+        ],
+        "excerpt_locator": "年度新能源",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F13"
+      },
+      {
+        "entity": "中国汽车行业",
+        "metric": "销量同比",
+        "value": 35.5,
+        "unit": "%",
+        "raw_value": "35.5",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "中汽协汽车行业销量口径，含出口、乘用车及商用车；非国内零售",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S01"
+        ],
+        "excerpt_locator": "年度新能源",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F14"
+      },
+      {
+        "entity": "中国汽车行业",
+        "metric": "新车销量占比",
+        "value": 40.9,
+        "unit": "%",
+        "raw_value": "40.9",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "中汽协汽车行业销量口径，含出口、乘用车及商用车；非国内零售",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S01"
+        ],
+        "excerpt_locator": "年度新能源",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F15"
+      },
+      {
+        "entity": "比亚迪",
+        "metric": "国内零售份额",
+        "value": 34.1,
+        "unit": "%",
+        "raw_value": "34.1",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "乘联会中国新能源乘用车国内零售；厂商统计边界，非上市集团全球销量",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S09"
+        ],
+        "excerpt_locator": "比亚迪",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F16"
+      },
+      {
+        "entity": "特斯拉中国",
+        "metric": "国内零售份额",
+        "value": 6.0,
+        "unit": "%",
+        "raw_value": "6.0",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "乘联会中国新能源乘用车国内零售；厂商统计边界，非上市集团全球销量",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S09"
+        ],
+        "excerpt_locator": "特斯拉中国",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F17"
+      },
+      {
+        "entity": "广汽埃安",
+        "metric": "国内零售份额",
+        "value": 3.4,
+        "unit": "%",
+        "raw_value": "3.4",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "乘联会中国新能源乘用车国内零售；厂商统计边界，非上市集团全球销量",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S09"
+        ],
+        "excerpt_locator": "广汽埃安",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F18"
+      },
+      {
+        "entity": "中国乘用车行业",
+        "metric": "新能源汽车销量",
+        "value": 1089.9,
+        "unit": "万辆",
+        "raw_value": "1,089.9",
+        "raw_unit": "万辆",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "中国新能源乘用车国内零售；与中汽协行业销量不可比",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S07"
+        ],
+        "excerpt_locator": "全年零售",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F19"
+      },
+      {
+        "entity": "蔚来",
+        "metric": "智能化发布",
+        "value": "蔚来在NIO Day 2024发布ET9，介绍智能系统和辅助驾驶等能力。",
+        "unit": "",
+        "raw_value": "蔚来在NIO Day 2024发布ET9，介绍智能系统和辅助驾驶等能力。",
+        "raw_unit": "",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "企业新品发布描述；非自动驾驶能力评测",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "text",
+        "source_ids": [
+          "S06"
+        ],
+        "excerpt_locator": "ET9发布",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F20"
+      },
+      {
+        "entity": "蔚来",
+        "metric": "交付计划",
+        "value": "公司在2025-01-01公告中预计ET9于2025年3月开始交付。",
+        "unit": "",
+        "raw_value": "公司在2025-01-01公告中预计ET9于2025年3月开始交付。",
+        "raw_unit": "",
+        "conversion_factor": 1,
+        "period": "2025-03",
+        "scope": "企业新品发布描述；非自动驾驶能力评测",
+        "value_type": "announced_plan",
+        "target_period": "2025-03",
+        "category": "text",
+        "source_ids": [
+          "S06"
+        ],
+        "excerpt_locator": "交付计划",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F21"
+      },
+      {
+        "entity": "宁德时代",
+        "metric": "电池技术",
+        "value": "宁德时代发布神行PLUS，产品发布口径为磷酸铁锂、1000km续航和4C超充。",
+        "unit": "",
+        "raw_value": "宁德时代发布神行PLUS，产品发布口径为磷酸铁锂、1000km续航和4C超充。",
+        "raw_unit": "",
+        "conversion_factor": 1,
+        "period": "2024",
+        "scope": "企业发布的产品特性；非独立实测或全市场普及率",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "text",
+        "source_ids": [
+          "S05"
+        ],
+        "excerpt_locator": "产品发布",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F22"
+      },
+      {
+        "entity": "比亚迪",
+        "metric": "国内零售份额",
+        "value": 35.0,
+        "unit": "%",
+        "raw_value": "35.0",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2023",
+        "scope": "乘联会中国新能源乘用车国内零售；厂商统计边界，非上市集团全球销量",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S08"
+        ],
+        "excerpt_locator": "比亚迪",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F23"
+      },
+      {
+        "entity": "特斯拉中国",
+        "metric": "国内零售份额",
+        "value": 7.8,
+        "unit": "%",
+        "raw_value": "7.8",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2023",
+        "scope": "乘联会中国新能源乘用车国内零售；厂商统计边界，非上市集团全球销量",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S08"
+        ],
+        "excerpt_locator": "特斯拉中国",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F24"
+      },
+      {
+        "entity": "广汽埃安",
+        "metric": "国内零售份额",
+        "value": 6.3,
+        "unit": "%",
+        "raw_value": "6.3",
+        "raw_unit": "%",
+        "conversion_factor": 1,
+        "period": "2023",
+        "scope": "乘联会中国新能源乘用车国内零售；厂商统计边界，非上市集团全球销量",
+        "value_type": "actual",
+        "target_period": null,
+        "category": "number",
+        "source_ids": [
+          "S08"
+        ],
+        "excerpt_locator": "广汽埃安",
+        "synthetic_test": false,
+        "status": "candidate",
+        "fact_id": "F25"
+      }
+    ],
+    "context_log": [
+      {
+        "source_id": "S10",
+        "char_budget": 2000,
+        "used_chars": 51,
+        "processed_locators": [
+          "年度财务"
+        ],
+        "skipped_locators": []
+      },
+      {
+        "source_id": "S04",
+        "char_budget": 2000,
+        "used_chars": 168,
+        "processed_locators": [
+          "交付",
+          "营收",
+          "亏损"
+        ],
+        "skipped_locators": []
+      },
+      {
+        "source_id": "S03",
+        "char_budget": 2000,
+        "used_chars": 169,
+        "processed_locators": [
+          "交付",
+          "营收",
+          "利润"
+        ],
+        "skipped_locators": []
+      },
+      {
+        "source_id": "S02",
+        "char_budget": 2000,
+        "used_chars": 19,
+        "processed_locators": [
+          "年度销量"
+        ],
+        "skipped_locators": []
+      },
+      {
+        "source_id": "S01",
+        "char_budget": 2000,
+        "used_chars": 63,
+        "processed_locators": [
+          "年度新能源"
+        ],
+        "skipped_locators": []
+      },
+      {
+        "source_id": "S09",
+        "char_budget": 2000,
+        "used_chars": 166,
+        "processed_locators": [
+          "比亚迪",
+          "特斯拉中国",
+          "广汽埃安"
+        ],
+        "skipped_locators": []
+      },
+      {
+        "source_id": "S07",
+        "char_budget": 2000,
+        "used_chars": 41,
+        "processed_locators": [
+          "全年零售"
+        ],
+        "skipped_locators": []
+      },
+      {
+        "source_id": "S06",
+        "char_budget": 2000,
+        "used_chars": 96,
+        "processed_locators": [
+          "ET9发布",
+          "交付计划"
+        ],
+        "skipped_locators": []
+      },
+      {
+        "source_id": "S05",
+        "char_budget": 2000,
+        "used_chars": 47,
+        "processed_locators": [
+          "产品发布"
+        ],
+        "skipped_locators": []
+      },
+      {
+        "source_id": "S08",
+        "char_budget": 2000,
+        "used_chars": 166,
+        "processed_locators": [
+          "比亚迪",
+          "特斯拉中国",
+          "广汽埃安"
+        ],
+        "skipped_locators": []
+      }
+    ]
+  },
+  "finished_at": "2026-10-23T11:18:38.738+00:00",
+  "elapsed_ms": 0.928
+}

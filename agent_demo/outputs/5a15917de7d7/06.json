@@ -1,0 +1,386 @@
+{
+  "number": 6,
+  "name": "报告生成",
+  "status": "completed",
+  "started_at": "2026-10-23T11:18:38.867+00:00",
+  "input": {
+    "context_file": "write_context.json",
+    "context_log": [
+      {
+        "section": "市场概况",
+        "char_budget": 12000,
+        "used_chars": 2006,
+        "fragment_budget": 24,
+        "used_fragments": 3,
+        "skipped": []
+      },
+      {
+        "section": "竞争格局",
+        "char_budget": 12000,
+        "used_chars": 4997,
+        "fragment_budget": 24,
+        "used_fragments": 6,
+        "skipped": []
+      },
+      {
+        "section": "技术趋势",
+        "char_budget": 12000,
+        "used_chars": 2194,
+        "fragment_budget": 24,
+        "used_fragments": 3,
+        "skipped": []
+      },
+      {
+        "section": "重点公司分析",
+        "char_budget": 12000,
+        "used_chars": 6205,
+        "fragment_budget": 24,
+        "used_fragments": 9,
+        "skipped": []
+      },
+      {
+        "section": "投资机会",
+        "char_budget": 12000,
+        "used_chars": 2101,
+        "fragment_budget": 24,
+        "used_fragments": 3,
+        "skipped": []
+      },
+      {
+        "section": "风险提示",
+        "char_budget": 12000,
+        "used_chars": 30,
+        "fragment_budget": 24,
+        "used_fragments": 0,
+        "skipped": []
+      }
+    ],
+    "approved_fact_ids": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F12",
+      "F14",
+      "F15",
+      "F16",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "F21",
+      "F22",
+      "F23",
+      "F24",
+      "F25",
+      "F26"
+    ],
+    "evidence_assessment": {
+      "sufficient": true,
+      "core_missing": [],
+      "missing_fields": [],
+      "supported_companies": 3
+    }
+  },
+  "tool": "MockLLM.write / 仅已审核的章节上下文",
+  "output": {
+    "title": "2024年新能源汽车行业竞争格局分析",
+    "subtitle": "离线Mock研究摘要｜2024全年｜观察截止2025-03-31（事后研究）",
+    "sections": [
+      {
+        "title": "一、市场概况",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "新能源汽车销量为1,286.6万辆。销量同比为35.5%。新车销量占比为40.9%。中汽协行业销量含出口与商用车，不等于国内零售渗透率。",
+            "fact_ids": [
+              "F14",
+              "F15",
+              "F16"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "二、竞争格局",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "乘联会中国新能源乘用车国内零售，厂商边界；三家按2024份额作样本内排序，非完整全国榜单。两期均为CnEVPost转引同一体系。",
+            "fact_ids": []
+          },
+          {
+            "type": "table",
+            "headers": [
+              "厂商",
+              "2023",
+              "2024",
+              "变化"
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "比亚迪",
+                  "35%",
+                  "34.1%",
+                  "-0.9个百分点"
+                ],
+                "fact_ids": [
+                  "F24",
+                  "F17",
+                  "D01"
+                ]
+              },
+              {
+                "cells": [
+                  "特斯拉中国",
+                  "7.8%",
+                  "6%",
+                  "-1.8个百分点"
+                ],
+                "fact_ids": [
+                  "F25",
+                  "F18",
+                  "D02"
+                ]
+              },
+              {
+                "cells": [
+                  "广汽埃安",
+                  "6.3%",
+                  "3.4%",
+                  "-2.9个百分点"
+                ],
+                "fact_ids": [
+                  "F26",
+                  "F19",
+                  "D03"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "变化=2024份额−2023份额（百分点），由已披露的四舍五入份额相减。公司分析另选比亚迪、理想、蔚来，考察不同盈利状态。",
+            "fact_ids": []
+          }
+        ]
+      },
+      {
+        "title": "三、技术趋势",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "2024年宁德时代发布神行PLUS，宣称磷酸铁锂1000km续航与4C超充；这是企业规格，非独立性能验证。",
+            "fact_ids": [
+              "F23"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "蔚来2024年发布ET9并介绍智能系统与辅助驾驶。",
+            "fact_ids": [
+              "F21"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "2025年1月公告预计同年3月起交付ET9，属于计划；本快照不证明已交付。",
+            "fact_ids": [
+              "F22"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "四、重点公司分析",
+        "blocks": [
+          {
+            "type": "subsection",
+            "title": "4.1 比亚迪",
+            "text": "2024年营收7,771亿元。归母净利402.5亿元，已具盈利规模。合并口径含手机部件等业务，不能等同汽车盈利；关注业务结构与利润持续性。",
+            "fact_ids": [
+              "F01",
+              "F02"
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "4.2 理想汽车",
+            "text": "2024年营收1,445亿元。营收同比16.6%。净利80亿元。净利同比-31.9%。增收未带来净利同步增长，关注费用与产品定价。财务未经审计。",
+            "fact_ids": [
+              "F08",
+              "F11",
+              "F09",
+              "F10"
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "4.3 蔚来",
+            "text": "2024年营收657.316亿元。净亏损224.017亿元。亏损同比扩大8.1%。规模尚未转为盈利，关注成本与资金消耗。财务未经审计，净亏损非归母口径。",
+            "fact_ids": [
+              "F04",
+              "F05",
+              "F06"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "五、投资机会",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "观察方向：有盈利基础的整车企业；继续核验价格竞争下的利润持续性与估值，不能从盈利直接推出股价空间。",
+            "fact_ids": [
+              "F02"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "观察方向：超充电池与补能配套；继续核验订单、成本和利用率，发布不等于商业化收益。",
+            "fact_ids": [
+              "F23"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "六、风险提示",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "关注价格竞争、需求与政策变化、技术兑现及资金风险；公司财务与厂商零售不可混除。未作估值或收益保证。",
+            "fact_ids": []
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "S01",
+        "publisher": "工信部（数据来自中汽协）",
+        "title": "2024年12月汽车工业经济运行情况",
+        "published_at": "2025-01-13",
+        "source_url": "https://www.miit.gov.cn/gxsj/tjfx/zbgy/qc/art/2025/art_a8895b6aa6d449e2861d027b0d85a2dd.html",
+        "excerpts": {
+          "年度新能源": "销量1286.6万辆；增长35.5%；总销量40.9%；销量1286.6万辆；"
+        }
+      },
+      {
+        "source_id": "S03",
+        "publisher": "理想汽车投资者关系",
+        "title": "理想2024全年业绩（未经审计）",
+        "published_at": "2025-03-14",
+        "source_url": "https://ir.lixiang.com/news-releases/news-release-details/li-auto-inc-announces-unaudited-fourth-quarter-and-full-year-3",
+        "excerpts": {
+          "营收": "RMB144.5 billion；",
+          "利润": "营业收入同比16.6%；净利润8.0十亿元；净利润同比-31.9%；"
+        }
+      },
+      {
+        "source_id": "S04",
+        "publisher": "蔚来投资者关系",
+        "title": "蔚来2024全年业绩（未经审计）",
+        "published_at": "2025-03-21",
+        "source_url": "https://ir.nio.com/news-releases/news-release-details/nio-inc-reports-unaudited-fourth-quarter-and-full-year-2024",
+        "excerpts": {
+          "营收": "RMB65,731.6 million；",
+          "亏损": "净亏损22,401.7百万元；扩大8.1%；"
+        }
+      },
+      {
+        "source_id": "S05",
+        "publisher": "宁德时代",
+        "title": "神行PLUS电池发布",
+        "published_at": "2024-04-25",
+        "source_url": "https://www.catl.com/news/7945.html",
+        "excerpts": {
+          "产品发布": "宁德时代发布神行PLUS，产品发布口径为磷酸铁锂、1000km续航和4C超充。；宁德时代发布神行PLUS，产品发布口径为磷酸铁锂、1000km续航和4C超充。；"
+        }
+      },
+      {
+        "source_id": "S06",
+        "publisher": "蔚来投资者关系",
+        "title": "蔚来2024全年交付与新品发布",
+        "published_at": "2025-01-01",
+        "source_url": "https://ir.nio.com/news-releases/news-release-details/nio-inc-provides-december-fourth-quarter-and-full-year-2024",
+        "excerpts": {
+          "ET9发布": "蔚来在NIO Day 2024发布ET9，介绍智能系统和辅助驾驶等能力。；",
+          "交付计划": "公司在2025-01-01公告中预计ET9于2025年3月开始交付。；"
+        }
+      },
+      {
+        "source_id": "S08",
+        "publisher": "CnEVPost（转引乘联会CPCA）",
+        "title": "2023年新能源厂商零售份额（转引乘联会）",
+        "published_at": "2024-01-23",
+        "source_url": "https://cnevpost.com/2024/01/23/wuling-aims-700000-nev-sales-2024/",
+        "excerpts": {
+          "比亚迪": "份额为35.0%；",
+          "特斯拉中国": "份额为7.8%；",
+          "广汽埃安": "份额为6.3%；"
+        }
+      },
+      {
+        "source_id": "S09",
+        "publisher": "CnEVPost（转引乘联会CPCA）",
+        "title": "2024年新能源厂商零售份额（转引乘联会）",
+        "published_at": "2025-01-10",
+        "source_url": "https://cnevpost.com/2025/01/10/automakers-share-china-nev-market-2024/",
+        "excerpts": {
+          "比亚迪": "份额为34.1%；",
+          "特斯拉中国": "份额为6.0%；",
+          "广汽埃安": "份额为3.4%；"
+        }
+      },
+      {
+        "source_id": "S10",
+        "publisher": "比亚迪官方媒体中心",
+        "title": "比亚迪2024财务业绩（官方发布）",
+        "published_at": "2025-03-26",
+        "source_url": "https://media.byd.com/byd-presente-ses-resultats-financiers-2024-les-recettes-atteignent-7771-milliards-de-yuans-en-hausse-de-23-par-rapport-a-lannee-precedente/?lang=fra",
+        "excerpts": {
+          "年度财务": "营业收入777.1十亿元；净利润40.25十亿元；净利润40.25十亿元；"
+        }
+      }
+    ],
+    "used_fact_ids": [
+      "D01",
+      "D02",
+      "D03",
+      "F01",
+      "F02",
+      "F04",
+      "F05",
+      "F06",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F14",
+      "F15",
+      "F16",
+      "F17",
+      "F18",
+      "F19",
+      "F21",
+      "F22",
+      "F23",
+      "F24",
+      "F25",
+      "F26"
+    ],
+    "scenario_label": "异常测试产物：已排除合成错误候选。"
+  },
+  "finished_at": "2026-10-23T11:18:38.870+00:00",
+  "elapsed_ms": 0.529
+}

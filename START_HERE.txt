@@ -1,0 +1,15 @@
+ResearchTrace 1.0.0
+==================
+1. Install Python 3.11+ and add it to PATH.
+2. Optional PDF export: python -m pip install -r requirements.txt
+3. Windows: double-click run_demo.bat and keep its console open.
+   CLI: python -B agent_demo/main.py serve --open
+4. Open http://127.0.0.1:8765 in a browser.
+5. Select Offline Mock / 离线 Mock. Click New research / 新建研究.
+6. Use the built-in industry or financial-comparison topic, start, inspect sources,
+   make review decisions, submit, then read/export the report.
+7. For real models, see docs/USAGE.md. Live mode requires selecting a provider,
+   entering your own API key, and detecting/selecting a model.
+Do not open agent_demo/web/index.html directly.
+Bundled offline samples use preset demonstration decisions, not private user history.
+Full Chinese instructions and screenshots: README.md and docs/USAGE.md.

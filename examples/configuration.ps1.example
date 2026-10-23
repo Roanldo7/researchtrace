@@ -1,0 +1,9 @@
+# Manual CLI configuration example for LOCAL SNAPSHOTS + OpenAI only.
+# This file is not loaded automatically. Do not put real credentials in a committed file.
+# Recommended: enter your own key in the page instead.
+$env:RESEARCHTRACE_MODEL_MODE = 'openai'
+$env:OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY'
+$env:RESEARCHTRACE_MODEL = 'gpt-4.1-mini'
+# Base URL is fixed to the official OpenAI Responses API.
+# For the LIVE mode, use the page's provider/key/model controls.
+python -B agent_demo/main.py serve --open

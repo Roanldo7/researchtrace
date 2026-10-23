@@ -1,0 +1,58 @@
+{
+  "number": 7,
+  "name": "引用检查",
+  "status": "completed",
+  "started_at": "2026-10-23T11:18:38.781+00:00",
+  "input": {
+    "used_fact_ids": [
+      "D01",
+      "D02",
+      "D03",
+      "F01",
+      "F02",
+      "F04",
+      "F05",
+      "F06",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F13",
+      "F14",
+      "F15",
+      "F16",
+      "F17",
+      "F18",
+      "F20",
+      "F21",
+      "F22",
+      "F23",
+      "F24",
+      "F25"
+    ]
+  },
+  "tool": "Python引用、长度、格式与依据检查",
+  "output": {
+    "valid_evidence": true,
+    "no_synthetic_facts": true,
+    "visible_characters": 1220,
+    "character_limit": 1500,
+    "section_characters": [
+      77,
+      216,
+      130,
+      251,
+      101,
+      55
+    ],
+    "section_limits_ok": true,
+    "six_sections": true,
+    "company_sections": 3,
+    "supported_company_sections": 3,
+    "evidence_sufficient": true,
+    "format_valid": true,
+    "passed": true
+  },
+  "finished_at": "2026-10-23T11:18:38.784+00:00",
+  "elapsed_ms": 0.399
+}

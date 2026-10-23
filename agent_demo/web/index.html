@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>研迹 ResearchTrace · 金融研究工作台</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<aside class="nav">
+  <a class="brand" href="/" aria-label="研迹首页"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 25V7h10a7 7 0 0 1 0 14H6m11-1 9 7M6 13h9"/></svg><span>研迹<small>RESEARCH TRACE</small></span></a>
+  <div class="nav-caption">研究空间</div>
+  <button id="new" class="nav-item active"><span>＋</span>新建研究</button>
+  <button id="current" class="nav-item"><span>≡</span>任务列表</button>
+  <button id="sample" class="nav-item"><span>↗</span>查看样例</button>
+  <button id="help" class="nav-item"><span>?</span>使用说明</button>
+  <div class="nav-bottom"><i></i> 本地工作空间<small>Python 标准库 · 可选模型<br>个人作品 · AI 辅助开发</small></div>
+</aside>
+<div class="app-shell">
+<header><div>金融研究工作台 <span class="header-sep">/</span> <span class="muted">行业研究</span></div><div class="header-right"><span class="badge">离线 Mock 演示</span><button id="about" class="text-button">样例说明</button></div></header>
+<main>
+  <div class="page-heading"><div><div class="eyebrow">RESEARCH WORKSPACE</div><h1>让研究结论，有迹可循。</h1><p>从研究主题到确认事实，再到一份可追溯的研究摘要。</p></div><div class="edition">资料期间 <strong>2024 全年</strong><span>观察截止 2025-03-31 · 事后研究</span></div></div>
+  <section class="run-mode-picker" aria-label="选择研究运行方式"><div class="section-top"><strong>运行方式</strong><span class="muted">切换独立研究空间 · 各自保留当前任务</span></div><div class="mode-choices"><button type="button" data-run-mode="mock" aria-pressed="true"><strong>离线 Mock</strong><small>固定资料快照 · 零 Key</small></button><button type="button" data-run-mode="openai" aria-pressed="false"><strong>本地资料＋真实模型</strong><small>本地工具选择 · 模型分析</small></button><button type="button" data-run-mode="live" aria-pressed="false"><strong>联网研究 Agent ↗</strong><small>联网网页搜索 · 模型推理</small></button></div><p id="mode-description">离线运行七步工作流，资料与模型均为明确标识的 Mock。</p></section>
+  <details id="composer" class="composer" aria-label="研究输入" open><summary id="composer-summary"><span class="summary-main"><strong>发起新研究 · 主题与运行设置</strong><span id="summary-mode" class="summary-mode">离线 Mock · 可切换</span></span><span id="summary-action" class="summary-action">收起设置 <b aria-hidden="true">⌃</b></span></summary>
+    <div class="section-top"><label for="topic">研究主题</label><div class="topic-examples"><button id="fill" class="text-button">行业综述示例</button><button id="fill-company" class="text-button">公司财务对比示例</button></div></div>
+    <textarea id="topic" maxlength="180" rows="2">分析2024年新能源汽车行业竞争格局及投资机会</textarea>
+    <div class="model-settings"><label for="model-mode">当前选择 <small>上方运行方式可切换</small></label><select id="model-mode" hidden><option value="mock">离线 Mock</option><option value="openai">本地资料＋真实模型</option><option value="live">联网研究 Agent</option></select><label id="live-provider-wrap" for="live-provider" hidden>模型服务商 <select id="live-provider"><option value="">请选择服务商</option><option value="qwen_cn">通义千问 · 中国</option><option value="qwen_intl">通义千问 · 国际</option><option value="glm">智谱 GLM</option><option value="deepseek">DeepSeek</option><option value="kimi_cn">Kimi 开放平台 · 中国</option><option value="kimi_intl">Kimi 开放平台 · 国际</option><option value="doubao">火山方舟 · 豆包</option><option value="gemini">Google Gemini</option><option value="claude">Anthropic Claude</option><option value="openai">OpenAI</option></select></label><label id="key-wrap" for="api-key" hidden><span id="key-label">所选服务商 API Key</span> <input id="api-key" type="password" autocomplete="off" spellcheck="false" placeholder="仅用于本次运行"></label><label id="live-model-wrap" for="live-model" hidden>联网模型 <select id="live-model"><option value="">先检测可用模型</option></select></label><label id="custom-model-wrap" for="custom-model" hidden>自定义模型 ID（填写后优先） <input id="custom-model" type="text" autocomplete="off" spellcheck="false" maxlength="80" placeholder="可选；例如 deepseek-flash"></label><button id="detect-models" type="button" hidden>检测并选择模型</button><span id="model-check-status" class="muted" hidden></span><span id="model-note" class="muted">无需 Key；本地快照与规则处理。</span></div>
+    <div class="compose-footer"><div><span class="scope">新能源汽车</span><span class="muted">本地快照 + MockLLM · 不连接真实金融数据库</span></div><div class="compose-actions"><label for="scenario">演示场景</label><select id="scenario"><option value="normal">正常研究</option><option value="exception">异常测试 · 超时与冲突</option></select><button class="primary" id="start">开始研究 <span>→</span></button></div></div>
+  </details>
+  <div id="message" class="message" role="alert" hidden></div>
+  <section class="workflow" aria-label="工作流进度"><div class="section-top"><div><strong>研究工作流</strong><span id="run-label" class="muted">准备开始</span><small class="step-hint">点击步骤可查看当时的执行记录</small></div><span id="status" class="status">尚未开始</span></div><ol id="steps"></ol><div id="stats" class="stats"><span>七步执行 · 中间结果自动保存</span><span>真实模型调用 <b>0</b> · Token / 费用：不适用</span></div></section>
+  <section id="review" class="review" hidden></section>
+  <div class="work-area">
+    <section class="workspace"><div class="tabs" role="tablist" aria-label="研究内容"><button role="tab" aria-selected="true" data-tab="report">研究报告</button><button role="tab" aria-selected="false" data-tab="data">关键数据 <span id="fact-count">0</span></button><button role="tab" aria-selected="false" data-tab="trace">执行轨迹</button><button role="tab" aria-selected="false" data-tab="eval">质量评测</button><button id="open-evidence" class="text-button">展开证据</button><a id="download" class="download" hidden>下载 Markdown ↓</a><a id="download-pdf" class="download" download="research_report.pdf" hidden>下载 PDF ↓</a></div><div id="content" role="tabpanel"></div></section>
+    <aside id="evidence" class="evidence" aria-label="证据详情"><div class="evidence-top"><strong>证据溯源</strong><button id="close-evidence" class="text-button">收起</button></div><div id="evidence-content"><div class="evidence-icon">[ ]</div><h3>每一个数字，都有出处</h3><p>点击关键数据或报告中的来源标记，查看原始片段、统计口径与本地定位。</p><div class="evidence-hint">01 公开资料快照<br>02 规则提取与口径换算<br>03 人工确认后引用</div></div></aside>
+  </div>
+  <footer>ResearchTrace <span>本地研究工作台 · 离线快照 / 可选真实模型与联网搜索</span></footer>
+</main>
+</div>
+<dialog id="info"><div class="dialog-head"><h2>样例与使用说明</h2><button id="close-info" aria-label="关闭说明">×</button></div><p>上方可切换离线 Mock、本地资料＋真实模型、联网研究 Agent。联网模式须先选服务商，再输入对应 Key 检测或验证推荐模型；Key 只发给所选服务商。</p><ol><li>选择运行方式，展开“发起新研究”并输入主题；本地两种模式仅支持固定的2024新能源汽车资料，联网模式可输入其他主题。</li><li>联网模式会保存搜索动作与网页引用；模型引用的陈述必须打开原文人工核对。</li><li>逐条采用或排除候选陈述后，模型只基于已采用内容起草报告；报告还需第二次人工确认才可下载 Markdown 或 PDF。</li><li>点报告引用查看来源；左侧“任务列表”可切换运行记录。</li></ol><p>“查看样例”载入固定离线样例，不重新执行。联网搜索和智谱模型检测可能产生费用；网页日期与事实真实性由人工核对。</p></dialog>
+<dialog id="runs-dialog" aria-labelledby="runs-title"><div class="dialog-head"><h2 id="runs-title">选择研究任务</h2><button id="close-runs" aria-label="关闭任务列表">×</button></div><p class="muted">选择一条任务查看进度、继续审核或阅读结果。</p><div id="run-list" class="run-list"></div></dialog>
+</body></html>
